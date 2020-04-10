@@ -26,7 +26,6 @@ const keyCode = ['Backquote', 'Digit1', 'Digit2', 'Digit3', 'Digit4', 'Digit5', 
 document.querySelectorAll('.key').forEach(el => el.addEventListener('mousedown', (event) => {
     event.target.classList.add('active');
      const btn = document.querySelector(`[id=${event.code}]`);                                           
-    document.querySelector('.screen').innerHTML += btn.innerHTML;
     })
     );
 
