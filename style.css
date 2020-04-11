@@ -1,0 +1,77 @@
+.screen {
+  position: absolute;
+  left: 300px;
+  top: 50px;
+  width: 900px;
+  height: 250px;
+}
+
+.keyboard {
+  width: 898px;
+  border: 1px solid black;
+  background-color: burlywood;
+  min-height: 100px;
+  position: absolute;
+  left: 303px;
+  top: 340px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.key {
+  min-width: 50px;
+  height: 34px;
+  margin: 3px;
+  padding-top: 12px;
+  border: 1px solid black;
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+.active {
+  min-width: 50px;
+  height: 34px;
+  margin: 3px;
+  padding-top: 12px;
+  text-align: center;
+  border-radius: 100%;
+  background-color: darkgreen;
+  transition: background-color 0.5s;
+}
+
+.capsLock {
+  background-color: darkorange;
+  border-radius: 50%;
+}
+
+.zhuzhik {
+  background-color: blue;
+}
+
+.key:nth-child(14), .key:nth-child(30) {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.key:nth-child(30), .key:nth-child(42) {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.key:nth-child(43), .key:nth-child(55) {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.key:nth-child(59) {
+  width: 45%;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.key:hover {
+  background-color: grey;
+}
